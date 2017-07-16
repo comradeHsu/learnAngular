@@ -2,7 +2,7 @@
  * Created by Administrator on 2017/7/14.
  */
 export class Todo {
-  id: number;
+  id: string;
   desc: string;
   completed: boolean;
 }

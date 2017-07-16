@@ -17,11 +17,11 @@ export class LoginComponent implements OnInit {
   }
 
   onClick() {
-    console.log('result is:'+ this.service.login(this.username, this.password));
+    console.log('result is:' + this.service.login(this.username, this.password));
   }
 
   onSubmit(formValue) {
-    console.log('result is:'+ this.service.login(formValue.login.username,
+    console.log('result is:' + this.service.login(formValue.login.username,
         formValue.login.password));
   }
 }

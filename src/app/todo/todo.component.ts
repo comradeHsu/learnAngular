@@ -1,17 +1,15 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, Inject, OnInit} from '@angular/core';
 import {Todo} from './todo.model';
 import {TodoService} from './todo.service';
 
 @Component({
-  selector: 'app-todo',
   templateUrl: './todo.component.html',
   styleUrls: ['./todo.component.css'],
-  providers: [TodoService]
 })
 export class TodoComponent implements OnInit {
   todos: Todo[] = [];
   desc: string = '';
-  constructor(private service: TodoService) { }
+  constructor(@Inject('todoService') private service) { }
 
   ngOnInit() {
   }
@@ -46,5 +44,8 @@ export class TodoComponent implements OnInit {
   getTodo() {
     this.service.getTodos()
       .then(todos => this.todos = [...todos]);
+  }
+  onTextChanges(value) {
+    this.desc = value;
   }
 }

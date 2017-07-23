@@ -4,54 +4,48 @@
       "id": "f823b191-7799-438d-8d78-fcb1e468fc78",
       "desc": "blablabla",
       "completed": true,
-      "userId":1
+      "userId": 1
     },
     {
       "id": "6f53f8e0-c690-ddc0-e06f-7a290548062d",
       "desc": "what",
       "completed": true,
-      "userId":2
+      "userId": 2
     },
     {
       "id": "22249632-3b52-fe32-f5c7-8c3b6c773036",
       "desc": "",
       "completed": true,
-      "userId":1
-    },
-    {
-      "id": "04810c23-df25-e467-9a89-541b4cc48713",
-      "desc": "",
-      "completed": true,
-      "userId":2
+      "userId": 1
     },
     {
       "id": "e4167605-c80c-8ed3-f27e-a31e756e2258",
       "desc": "",
       "completed": true,
-      "userId":1
+      "userId": 1
     },
     {
-      "id": "230000ce-4378-c231-0a62-989c86e8dea9",
-      "desc": "hahah",
+      "id": "23ec0a09-30e7-8e70-1b7c-06867f1b0efe",
+      "desc": "shit",
       "completed": true,
-      "userId":2
+      "userId": 2
     }
   ],
-  "users":[
+  "users": [
     {
-      "id":1,
-      "username":"wang",
-      "password":"1234"
+      "id": 1,
+      "username": "wang",
+      "password": "1234"
     },
     {
-      "id":2,
-      "username":"xuhui",
-      "password":"1234"
+      "id": 2,
+      "username": "xuhui",
+      "password": "1234"
     },
     {
-      "id":3,
-      "username":"yanzi",
-      "password":"1234"
+      "id": 3,
+      "username": "yanzi",
+      "password": "1234"
     }
   ]
 }

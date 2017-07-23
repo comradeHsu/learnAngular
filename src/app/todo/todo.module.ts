@@ -1,23 +1,24 @@
 /**
  * Created by Administrator on 2017/7/17.
  */
-import {NgModule} from '@angular/core';
-import {CommonModule} from '@angular/common';
-import {FormsModule} from '@angular/forms';
-import {HttpModule} from '@angular/http';
-import {TodoComponent} from './todo.component';
-import {TodoFooterComponent} from './todo-footer/todo-footer.component';
-import {TodoHeaderComponent} from './todo-header/todo-header.component';
-import {TodoService} from './todo.service';
-import {routing} from './todo.routes';
-import {TodoItemComponent} from './todo-item/todo-item.component';
-import {TodoListComponent} from './todo-list/todo-list.component';
+import { NgModule } from '@angular/core';
+import { HttpModule } from '@angular/http';
+import { SharedModule } from '../shared/shared.module';
+
+import { TodoRoutingModule } from './todo-routing.module'
+
+import { TodoComponent } from './todo.component';
+import { TodoFooterComponent } from './todo-footer/todo-footer.component';
+import { TodoHeaderComponent } from './todo-header/todo-header.component';
+import { TodoService } from './todo.service';
+import { TodoItemComponent } from './todo-item/todo-item.component';
+import { TodoListComponent } from './todo-list/todo-list.component';
+
 @NgModule({
   imports: [
-    CommonModule,
-    FormsModule,
+    SharedModule,
     HttpModule,
-    routing
+    TodoRoutingModule
   ],
   declarations: [
     TodoComponent,
@@ -28,6 +29,6 @@ import {TodoListComponent} from './todo-list/todo-list.component';
   ],
   providers: [
     {provide: 'todoService', useClass: TodoService}
-  ]
+  ],
 })
 export class TodoModule {}

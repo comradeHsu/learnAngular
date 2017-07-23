@@ -6,11 +6,12 @@ import { RouterModule } from '@angular/router';
 
 import { AppComponent } from './app.component';
 import { LoginComponent } from './login/login.component';
-import {routing} from './app.routes';
 import {AuthService} from './core/auth.service';
 import {InMemoryWebApiModule} from 'angular-in-memory-web-api';
 import {TodoModule} from './todo/todo.module';
 import {CoreModule} from './core/core.module';
+import {AppRoutingModule} from './app-routing.module';
+import {MdlModule} from 'angular2-mdl';
 
 @NgModule({
   declarations: [
@@ -21,10 +22,11 @@ import {CoreModule} from './core/core.module';
     BrowserModule,
     FormsModule,
     HttpModule,
-    routing,
+    MdlModule,
     // InMemoryWebApiModule.forRoot(InMemoryTodoService),
     TodoModule,
-    CoreModule
+    CoreModule,
+    AppRoutingModule
   ],
   providers: [
     {provide: 'auth', useClass: AuthService}

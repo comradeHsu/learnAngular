@@ -30,6 +30,7 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   font-weight: 300;
+  /*background-color:skyblue;*/
 }
 :focus {
   outline: 0;

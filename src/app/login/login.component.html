@@ -1,4 +1,7 @@
-<div>
+<div class="mdl-grid mdl-grid--no-spacing login-container"
+     [ngStyle]="{'background-image': 'url(' + photo + ')'}">
+  <mdl-layout-spacer class="mdl-cell mdl-cell--8-col mdl-cell--4-col-tablet mdl-cell--hide-phone">
+  </mdl-layout-spacer>
   <form (ngSubmit)="onSubmit()">
     <mdl-textfield
       type="text"
@@ -29,4 +32,5 @@
       Login
     </button>
   </form>
+  <mdl-layout-spacer></mdl-layout-spacer>
 </div>
